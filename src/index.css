@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    font-size: 40%;
+    line-height: 1.5;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a:link,
+a:visited,
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.App {
+    font-family: Arial,  sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+}
+
+
+/* ---------------------------------- */
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 30%;
+    }
+}
+@media screen and (max-width: 900px) {
+    html {
+        font-size: 20%;
+    }
+}
+@media screen and (max-width: 500px) {
+    html {
+        font-size: 15%;
+    }
+}
+@media screen and (max-width: 365px) {
+    html {
+        font-size: 10%;
+    }
+}
+/* ---------------------------------- */
+@media screen and (min-width: 2000px) {
+    html {
+        font-size: 60%;
+    }
+}
+/* ---------------------------------- */

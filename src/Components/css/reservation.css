@@ -1,0 +1,226 @@
+.Reservation {
+    background-color: #E9EFE2;
+    padding: 10rem 0;
+    overflow-x: auto;
+
+}
+
+.PlacesLeft {
+    text-align: center;
+    width: 125rem;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.PlacesCard {
+    box-sizing: border-box;
+    width: 32%;
+    background-color: white;
+    border-radius: 3rem;
+    text-align: left;
+    padding: 3rem;
+    margin: 5rem 0;
+    color: #202124;
+    border: 1px solid #DADCE0;
+    display: inline-block;
+}
+
+#middleCard {
+    margin: 5rem 2%;
+}
+
+.PlacesCard h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.PlacesCard h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.PlacesCard .shift_1 {
+    float: left;
+}
+
+.PlacesCard .shift_2 {
+    float: right;
+}
+
+.PlacesCard .placesNumber {
+    font-size: 6rem;
+}
+
+
+.Form {
+    text-align: center;
+    width: 125rem;
+    margin: auto;
+    margin-top: 5rem;
+
+}
+
+.Card {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: white;
+    border-radius: 3rem;
+    text-align: left;
+    padding: 3rem;
+    margin: 5rem 0;
+    color: #202124;
+    border: 1px solid #DADCE0;
+}
+
+.Card h1 {
+    font-size: 4rem;
+    margin-top: 0;
+    margin-bottom: 5rem;
+}
+
+.Description {
+    font-size: 3rem;
+}
+.SponsorsCard img{
+    width: 100%;
+}
+
+.requiredStar {
+    color: red;
+    display: inline;
+    margin-left: 1rem;
+}
+
+.Card .outer-input {
+    width: 50%;
+}
+
+.Card input {
+    font-family: Raleway, sans-serif;
+}
+
+.Card input {
+    border: none;
+    border-bottom: 2px solid #E0E0E0;
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 1rem;
+
+    font-size: 3rem;
+    outline: none;
+
+
+}
+
+.Card input~.border {
+    position: relative;
+    bottom: 2px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+}
+
+/* 
+.Card input:focus {
+    border-bottom: 2px solid #298904;
+
+} */
+
+.Card input:focus~.border {
+    background-color: #298904;
+    width: 100%;
+    left: 0;
+    transition: 0.4s ease;
+}
+
+
+
+.Card input[type=text]::placeholder {
+    color: #70757A;
+}
+
+.Card select {
+    font-family: Fira Sans, sans-serif;
+    border: 1px solid #E0E0E0;
+    min-width: 20%;
+    max-width: 50%;
+    overflow: hidden;
+    padding: 2rem;
+    padding-right: 8rem;
+
+    font-size: 3rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 50%;
+    background-size: 5rem;
+
+    outline: none;
+}
+
+.Card select:invalid {
+    color: rgb(158, 154, 154);
+}
+
+.Card select::-ms-expand {
+    display: none;
+}
+
+.Card select:hover {
+    cursor: pointer;
+}
+
+
+.submitButton {
+    text-align: left;
+}
+
+input[type="submit"] {
+    font-family: Raleway, sans-serif;
+    letter-spacing: 1px;
+
+    border: none;
+    border-radius: 2rem;
+    background-color: #298904;
+
+    /* float: left; */
+    text-align: center;
+
+    padding: 3rem 5rem;
+    margin: 2rem 0.5rem;
+
+    color: white;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+
+/* HAS ERROR */
+/* 
+.Card input:invalid ~.border {
+    
+    background-color: #D93025;
+    width: 100%;
+    left: 0;
+    transition: 0.4s ease;
+}
+input:invalid ~.Card {
+    border-color: #D93025;
+} */
+@media screen and (max-width: 650px) {
+    .PlacesLeft {
+        width: 90%;
+    }
+
+    .Form {
+        width: 90%;
+    }
+}

@@ -1,0 +1,389 @@
+.Orders {
+    font-family: sans-serif;
+    background-color: #E9EFE2;
+    padding: 10rem 0;
+    overflow-x: auto;
+    min-height: 80vh;
+}
+
+.filters {
+    width: 160rem;
+    margin: auto;
+    margin-top: 20rem;
+    background-color: white;
+    border-radius: 2rem;
+    border-collapse: collapse;
+    filter: drop-shadow(1rem 1rem 6rem black);
+    /* height: 9rem; */
+}
+
+.filters input {
+    border: none;
+    border-bottom: 2px solid #E0E0E0;
+    width: 27rem;
+    box-sizing: border-box;
+    padding-bottom: 1rem;
+    vertical-align: middle;
+    font-size: 2rem;
+    color: #353535;
+    outline: none;
+    margin: 3rem;
+    padding-bottom: 0.7rem;
+}
+
+.filters select {
+    font-family: Fira Sans, sans-serif;
+    font-weight: 300;
+    color: #353535;
+    border: 1px solid #E0E0E0;
+    overflow: hidden;
+    padding: 2rem;
+    padding-right: 8rem;
+    border-radius: 1rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 50%;
+    background-size: 3.5rem;
+    margin-right: 2rem;
+    outline: none;
+}
+
+
+.filters input[type=reset] {
+    position: absolute;
+    right: 0;
+    margin-top: 1.5rem;
+    font-family: Raleway, sans-serif;
+    letter-spacing: 1px;
+
+    border: none;
+    border-radius: 1rem;
+    background-color: #298904;
+
+    /* float: right; */
+    text-align: center;
+    vertical-align: middle;
+    width: auto;
+    padding: 2rem 4rem;
+    /* margin: 2rem 0.5rem; */
+
+    color: white;
+    font-weight: 600;
+    /* font-size: rem; */
+}
+
+.filters input[type=reset]:hover {
+    cursor: pointer;
+}
+.filters select:hover {
+    cursor: pointer;
+}
+
+
+.Orders table {
+    text-align: center;
+    width: 180rem;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 20rem;
+    /* background-color: white; */
+    border-collapse: collapse;
+    filter: drop-shadow(1rem 1rem 6rem black);
+
+}
+
+/* #F5F5F5 */
+.Orders table th,
+td {
+    /* max-width: 3.5rem; */
+    word-wrap: break-word;
+    padding-left: 2rem;
+}
+
+
+/* Table HEADER */
+thead {
+    color: white;
+    font-size: 2rem;
+
+}
+
+thead tr {
+    background-color: #36304A;
+}
+
+thead th {
+    font-weight: 500;
+    height: 9rem;
+}
+
+thead th:first-child {
+    border-radius: 2rem 0 0 0;
+}
+
+thead th:last-child {
+    border-radius: 0 2rem 0 0;
+}
+
+/* Table BODY */
+
+
+tbody tr {
+    font-size: 2rem;
+    color: #808080;
+    height: 7rem;
+}
+
+
+tbody tr:nth-child(odd) {
+    background-color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+tbody tr:last-child td:first-child {
+    border-radius: 0 0 0 2rem;
+}
+
+tbody tr:last-child td:last-child {
+    border-radius: 0 0 2rem 0;
+}
+
+
+/* colum width  total = 180rem*/
+#nr {
+    padding-left: 4rem;
+    text-align: left;
+    width: 7rem;
+}
+
+#name {
+    text-align: left;
+    width: 16rem;
+}
+
+#email {
+    text-align: left;
+    width: 40rem;
+}
+#tel {
+    text-align: left;
+    width: 16rem;
+}
+
+/* 63 */
+
+#day {
+    text-align: left;
+    width: 14rem;
+}
+
+/* 77 */
+#shift {
+    text-align: left;
+    width: 10rem;
+}
+
+/* 87 */
+
+.order {
+    text-align: right;
+    width: 15rem;
+}
+
+/* 147 , left= 33*/
+#date {
+    text-align: right;
+    width: 17rem;
+}
+
+#confirmed {
+    text-align: right;
+    width: 16rem;
+    padding-right: 4rem;
+}
+
+#total {
+    text-align: right;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+#totalNR {
+    padding-right: 4rem;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+@media only screen and (max-width:900px) {
+    table {
+        width: 80% !important;
+    }
+    .filters{
+        width: 77% !important;
+        padding: 3rem;
+    }
+    .filters input[type=reset] {
+        position: relative;
+        margin: 2rem;
+    }
+    .filters select {
+        margin: 2rem;
+    }
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+        /* width: auto !important; */
+        text-align: left !important;
+        padding-left: 0 !important;
+        padding: 1rem !important;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        /* border: 1px solid #ccc; */
+        height: auto !important;
+
+    }
+
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        /* border-bottom: 1px solid #eee; */
+        position: relative;
+        padding-left: 50% !important;
+        width: auto !important;
+        height: 4.5rem;
+
+    }
+
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    tr:first-child {
+        border-radius: 3rem 3rem 0 0;
+        /* border: 1px solid black; */
+    }
+
+    tr:last-child {
+        border-radius: 0 0 3rem 3rem;
+
+    }
+
+    /*
+	Label the data
+	*/
+    td:nth-of-type(1):before {
+        content: "Nr";
+    }
+
+    td:nth-of-type(2):before {
+        content: "Naam";
+    }
+
+    td:nth-of-type(3):before {
+        content: "E-Mail";
+    }
+    td:nth-of-type(4):before {
+        content: "Telefoon Nr";
+    }
+
+    td:nth-of-type(5):before {
+        content: "Dag";
+    }
+
+    td:nth-of-type(6):before {
+        content: "Shift";
+    }
+
+    td:nth-of-type(7):before {
+        content: "Volwassen Mosselen";
+    }
+
+    td:nth-of-type(8):before {
+        content: "Volwassen Stoofvlees";
+    }
+
+    td:nth-of-type(9):before {
+        content: "Kinder Mosselen";
+    }
+
+    td:nth-of-type(10):before {
+        content: "Kinder Stoofvlees";
+    }
+
+    td:nth-of-type(11):before {
+        content: "Datum";
+    }
+
+    td:nth-of-type(12):before {
+        content: "Bevestigd";
+    }
+
+    #total td:nth-of-type(1):before {
+        content: "Order";
+        font-size: 3rem;
+    }
+    #Total {
+        font-size: 3rem;
+    }
+    #total td:nth-of-type(2):before {
+        content: "Volwassen Mosselen";
+    }
+
+    #total td:nth-of-type(3):before {
+        content: "Volwassen Stoofvlees";
+    }
+
+    #total td:nth-of-type(4):before {
+        content: "Kinder Mosselen";
+    }
+
+    #total td:nth-of-type(5):before {
+        content: "Kinder Stoofvlees";
+    }
+
+    #total td:nth-of-type(6):before {
+        content: "TOTAAL";
+    }
+
+    html {
+        font-size: 30%;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    html {
+        width: 100%
+    }
+
+    table {
+        width: 100% !important;
+    }
+}
